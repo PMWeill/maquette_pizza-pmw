@@ -1,0 +1,81 @@
+@media screen and (max-width: 576px) {
+    
+    header{
+        background-image: url("/img/pizza.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+        opacity: 0.8;
+        position: relative;
+       
+    }
+
+
+
+    header label {
+        display: block;
+        float: right;
+        cursor: pointer;
+        color: rgb(193, 19, 19);
+        font-size: 2.5em;
+    }
+    
+header ul{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    position:  absolute;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2.5em;
+    z-index: -11111111;
+    
+}
+header ul li{
+   width: 100%;
+}
+.bg{
+    z-index: -1111111111;
+}
+header input:checked ~ ul{
+    top:0;
+    transition: top 1s;
+}
+header input:not(:checked) ~ ul{
+    top:-100%;
+    transition: top 1s;
+}
+
+
+.map {
+    height: 30vh;
+    background-attachment: scroll;
+}
+
+
+
+
+
+
+#menu .infoplat .prix {
+    width: 10%;
+   
+}
+
+
+
+
+
+
+
+
+.centrer{
+    width: 90%;
+    margin: auto;
+}
+
+
+}
